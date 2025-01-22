@@ -62,6 +62,66 @@ const routes: Routes = [
 		children: [
 			/* user */
 			{
+				path: 'funtag',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funtag'
+					}
+				},
+				loadChildren: () => import('./modules/funtag/pages/funtag/funtag.module').then(m => m.FuntagModule)
+			}, 
+			{
+				path: 'funquestion',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funquestion'
+					}
+				},
+				loadChildren: () => import('./modules/funquestion/pages/funquestion/funquestion.module').then(m => m.FunquestionModule)
+			}, 
+			{
+				path: 'funtruthoraction',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funtruthoraction'
+					}
+				},
+				loadChildren: () => import('./modules/funtruthoraction/pages/funtruthoraction/funtruthoraction.module').then(m => m.FuntruthoractionModule)
+			}, 
+			{
+				path: 'funwork',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funwork'
+					}
+				},
+				loadChildren: () => import('./modules/funwork/pages/funwork/funwork.module').then(m => m.FunworkModule)
+			}, 
+			{
+				path: 'fungame',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'fungame'
+					}
+				},
+				loadChildren: () => import('./modules/fungame/pages/fungame/fungame.module').then(m => m.FungameModule)
+			}, 
+			{
+				path: 'funjoke',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funjoke'
+					}
+				},
+				loadChildren: () => import('./modules/funjoke/pages/funjoke/funjoke.module').then(m => m.FunjokeModule)
+			}, 
+			{
 				path: 'profile',
 				canActivate: [MetaGuard],
 				data: {
