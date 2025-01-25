@@ -7,13 +7,13 @@ import {
 	Input
 } from '@angular/core';
 import { SelectModule } from 'src/app/core/modules/select/select.module';
-import { FunworkService } from '../../services/funwork.service';
-import { Funwork } from '../../interfaces/funwork.interface';
+import { FunwordService } from '../../services/funword.service';
+import { Funword } from '../../interfaces/funword.interface';
 
 @Component({
-	selector: 'funwork-selector',
-	templateUrl: './funwork-selector.component.html',
-	styleUrls: ['./funwork-selector.component.scss'],
+	selector: 'funword-selector',
+	templateUrl: './funword-selector.component.html',
+	styleUrls: ['./funword-selector.component.scss'],
 	imports: [SelectModule]
 })
 export class SelectUserComponent implements OnChanges {
@@ -21,11 +21,11 @@ export class SelectUserComponent implements OnChanges {
 
 	@Output() wChange = new EventEmitter();
 
-	get items(): Funwork[] {
-		return this._funworkService.funworks;
+	get items(): Funword[] {
+		return this._funwordService.funwords;
 	}
 
-	constructor(private _funworkService: FunworkService) {}
+	constructor(private _funwordService: FunwordService) {}
 
 	ngOnChanges(changes: SimpleChanges): void {
 		if (changes['value'] && !changes['value'].firstChange) {

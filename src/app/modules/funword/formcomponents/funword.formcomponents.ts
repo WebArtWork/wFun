@@ -1,6 +1,6 @@
-export const funworkFormComponents = {
-	formId: 'funwork',
-	title: 'Funwork',
+export const funwordFormComponents = {
+	formId: 'funword',
+	title: 'Funword',
 	components: [
 		{
 			name: 'Text',
@@ -9,7 +9,7 @@ export const funworkFormComponents = {
 			fields: [
 				{
 					name: 'Placeholder',
-					value: 'fill funwork title',
+					value: 'fill funword title',
 				},
 				{
 					name: 'Label',
@@ -23,7 +23,7 @@ export const funworkFormComponents = {
 			fields: [
 				{
 					name: 'Placeholder',
-					value: 'fill funwork description',
+					value: 'fill funword description',
 				},
 				{
 					name: 'Label',

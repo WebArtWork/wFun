@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Funwork } from '../interfaces/funwork.interface';
+import { Funword } from '../interfaces/funword.interface';
 import {
 	AlertService,
 	CoreService,
@@ -11,7 +11,7 @@ import {
 @Injectable({
 	providedIn: 'root',
 })
-export class FunworkService extends CrudService<Funwork> {
+export class FunwordService extends CrudService<Funword> {
 	constructor(
 		_http: HttpService,
 		_store: StoreService,
@@ -20,7 +20,7 @@ export class FunworkService extends CrudService<Funwork> {
 	) {
 		super(
 			{
-				name: 'funwork',
+				name: 'funword',
 			},
 			_http,
 			_store,

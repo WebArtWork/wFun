@@ -62,6 +62,46 @@ const routes: Routes = [
 		children: [
 			/* user */
 			{
+				path: 'pages',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Pages'
+					}
+				},
+				loadChildren: () => import('./pages/user/admin/pages/pages.module').then(m => m.PagesModule)
+			}, 
+			{
+				path: 'action',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Action'
+					}
+				},
+				loadChildren: () => import('./pages/user/truth/or/action/action.module').then(m => m.ActionModule)
+			}, 
+			{
+				path: 'game',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Game'
+					}
+				},
+				loadChildren: () => import('./pages/user/create/game/game.module').then(m => m.GameModule)
+			}, 
+			{
+				path: 'funword',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Funword'
+					}
+				},
+				loadChildren: () => import('./modules/funword/pages/funword/funword.module').then(m => m.FunwordModule)
+			}, 
+			{
 				path: 'funtag',
 				canActivate: [MetaGuard],
 				data: {
@@ -92,21 +132,21 @@ const routes: Routes = [
 				loadChildren: () => import('./modules/funtruthoraction/pages/funtruthoraction/funtruthoraction.module').then(m => m.FuntruthoractionModule)
 			}, 
 			{
-				path: 'funwork',
+				path: 'funword',
 				canActivate: [MetaGuard],
 				data: {
 					meta: {
-						title: 'Funwork'
+						title: 'Funword'
 					}
 				},
-				loadChildren: () => import('./modules/funwork/pages/funwork/funwork.module').then(m => m.FunworkModule)
+				loadChildren: () => import('./modules/funword/pages/funword/funword.module').then(m => m.FunwordModule)
 			}, 
 			{
 				path: 'fungame',
 				canActivate: [MetaGuard],
 				data: {
 					meta: {
-						title: 'fungame'
+						title: 'Fungame'
 					}
 				},
 				loadChildren: () => import('./modules/fungame/pages/fungame/fungame.module').then(m => m.FungameModule)

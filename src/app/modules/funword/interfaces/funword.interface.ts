@@ -1,6 +1,6 @@
 import { CrudDocument } from 'wacom';
 
-export interface Funwork extends CrudDocument {
+export interface Funword extends CrudDocument {
 	name: string;
 	description: string;
 }

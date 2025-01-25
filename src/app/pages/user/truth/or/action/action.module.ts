@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CoreModule } from 'src/app/core/core.module';
-import { FunworkComponent } from './funwork.component';
+import { ActionComponent } from './action.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: FunworkComponent
+		component: ActionComponent
 	}
 ];
 
 @NgModule({
 	imports: [RouterModule.forChild(routes), CoreModule],
-	declarations: [FunworkComponent],
-	providers: []
+	declarations: [ActionComponent]
 })
-export class FunworkModule {}
+export class ActionModule {}
