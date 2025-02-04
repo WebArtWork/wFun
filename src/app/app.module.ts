@@ -61,36 +61,7 @@ const routes: Routes = [
 		component: UserComponent,
 		children: [
 			/* user */
-			{
-				path: 'pages',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Pages'
-					}
-				},
-				loadChildren: () => import('./pages/user/admin/pages/pages.module').then(m => m.PagesModule)
-			}, 
-			{
-				path: 'action',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Action'
-					}
-				},
-				loadChildren: () => import('./pages/user/truth/or/action/action.module').then(m => m.ActionModule)
-			}, 
-			{
-				path: 'game',
-				canActivate: [MetaGuard],
-				data: {
-					meta: {
-						title: 'Game'
-					}
-				},
-				loadChildren: () => import('./pages/user/create/game/game.module').then(m => m.GameModule)
-			}, 
+			
 			{
 				path: 'funword',
 				canActivate: [MetaGuard],
