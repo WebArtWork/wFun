@@ -12,6 +12,8 @@ import {
 	providedIn: 'root',
 })
 export class FungameService extends CrudService<Fungame> {
+	fungame: Fungame[] = this.getDocs();
+  fungameByAuthor: Record<string, Fungame[]> = {};
 	constructor(
 		_http: HttpService,
 		_store: StoreService,

@@ -37,10 +37,13 @@
 					</wbutton>
 				</div>
 
-				<div class="profile__password">
-					<wbutton (click)="changePassword()" type="link" translate>
-						Profile.Change Password
-					</wbutton>
+				<div
+      *ngFor="let profiles of profile"
+      class="documents-main-row"
+     >
+      <a routerLink="/myprofile/{{profiles._id}}">
+       <app-profiles [profiles]="profiles"></app-profiles>
+      </a>
 				</div>
 			</div>
 		</div>
