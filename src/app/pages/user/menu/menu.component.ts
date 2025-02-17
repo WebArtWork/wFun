@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
+import { FungameService } from 'src/app/modules/fungame/services/fungame.service';
+import { Fungame } from 'src/app/modules/fungame/interfaces/fungame.interface';
 
 @Component({
-  selector: 'app-menu',
   standalone: false,
   
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  templateUrl: './menus.component.html',
+  styleUrl: './menus.component.scss'
 })
 export class MenuComponent {
-  isMenuOpen=false;
+  get menus(): Fungame[] {
+    return this._fungameService.fungame;
+  }
+  
+  isMenuOpen = false;
+
+  constructor(private _fungameService: FungameService) {}
 }

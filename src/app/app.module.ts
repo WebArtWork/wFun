@@ -137,14 +137,107 @@ const routes: Routes = [
 				canActivate: [MetaGuard],
 				data: {
 					meta: {
-						title: 'My Profile'
+						title: 'Profile'
 					}
 				},
 				loadChildren: () =>
 					import('./pages/user/profile/profile.module').then(
 						(m) => m.ProfileModule
 					)
-			}
+			},
+			{
+				path: 'menu',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Menu'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/menu/menu.module').then(
+						(m) => m.MenuModule
+					)
+			},
+
+			{
+				path: 'create-game',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Create-game'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/create-game/create-game.module').then(
+						(m) => m.CreateGameModule
+					)
+			},
+			{
+				path: 'gameplay',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Gameplay'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/gameplay/gameplay.module').then(
+						(m) => m.GameplayModule
+					)
+			},
+			{
+				path: 'jokes',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Jokes'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/jokes/jokes.module').then(
+						(m) => m.JokesModule
+					)
+			},
+			{
+				path: 'questions',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Questions'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/questions/questions.module').then(
+						(m) => m.QuestionsModule
+					)
+			},
+			{
+				path: 'truth-or-action',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Truth-or-action'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/truth-or-action/truth-or-action.module').then(
+						(m) => m.TruthOrActionModule
+					)
+			},
+			{
+				path: 'words',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Words'
+					}
+				},
+				loadChildren: () =>
+					import('./pages/user/words/words.module').then(
+						(m) => m.WordsModule
+					)
+			},
+			
 		]
 	},
 	{

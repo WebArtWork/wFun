@@ -21,7 +21,13 @@
             <div class="documents-main">
                 <div class="documents-main-content">
                     <div  class="documents-main-row">
-                        <p>menu works!</p>
+                        <div
+      *ngFor="let menu of menus"
+      class="documents-main-row"
+     >
+      <a routerLink="/menu/{{fungame_id}}">
+       <app-menus [menus]="menus"></app-menus>
+      </a>
                     </div>
                 </div>
             </div>
