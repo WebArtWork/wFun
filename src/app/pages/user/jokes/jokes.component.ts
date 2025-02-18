@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-@Component({
-  selector: 'app-jokes',
-  standalone: false,
-  
+@Component({ 
   templateUrl: './jokes.component.html',
-  styleUrl: './jokes.component.scss'
+  styleUrls: ['./jokes.component.scss'],
+  standalone: false
 })
 export class JokesComponent {
-
+ 
 }
+

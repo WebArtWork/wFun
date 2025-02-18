@@ -5,8 +5,8 @@ import { Fungame } from 'src/app/modules/fungame/interfaces/fungame.interface';
 @Component({
   standalone: false,
   
-  templateUrl: './menus.component.html',
-  styleUrl: './menus.component.scss'
+  templateUrl: './menu.component.html',
+  styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
   get menus(): Fungame[] {
