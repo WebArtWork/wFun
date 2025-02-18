@@ -1,0 +1,1 @@
+import{Hc as n,Y as o,cb as e}from"./chunk-NRCAQXNS.js";var u=(()=>{class t{static{this.\u0275fac=function(i){return new(i||t)}}static{this.\u0275mod=e({type:t})}static{this.\u0275inj=o({imports:[n]})}}return t})();export{u as TruthOrActionModule};

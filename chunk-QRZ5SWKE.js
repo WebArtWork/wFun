@@ -1,0 +1,1 @@
+import{Hc as n,Y as t,cb as o}from"./chunk-NRCAQXNS.js";var c=(()=>{class e{static{this.\u0275fac=function(i){return new(i||e)}}static{this.\u0275mod=o({type:e})}static{this.\u0275inj=t({imports:[n]})}}return e})();export{c as GameplayModule};

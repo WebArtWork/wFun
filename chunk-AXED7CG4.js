@@ -1,0 +1,1 @@
+import{Hc as n,Y as e,cb as o}from"./chunk-NRCAQXNS.js";var c=(()=>{class t{static{this.\u0275fac=function(i){return new(i||t)}}static{this.\u0275mod=o({type:t})}static{this.\u0275inj=e({imports:[n]})}}return t})();export{c as WordsModule};
